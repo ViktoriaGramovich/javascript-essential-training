@@ -23,4 +23,19 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+  changeColor: function (color) {
+    this.color = color;
+  },
+  renameBackpack: function (newName) {
+    this.name = newName;
+  },
+  changeVolume: function (volume) {
+    this.volume = volume;
+  }
 };
+
+backpack.newStrapLength(30, 50);
+console.log(`New strapLength values: \nright - ${backpack.strapLength.right}\nleft - ${backpack.strapLength.left}`);
+
+backpack.changeColor('red');
+console.log('New color: ', backpack.color);
